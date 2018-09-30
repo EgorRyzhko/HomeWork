@@ -1,0 +1,95 @@
+.option_link {
+    background-color: #fff;
+    color:blue;
+    text-decoration: none;
+    cursor: pointer;                               
+}
+
+.option_link:hover {
+    text-decoration: underline;
+}
+
+#create_btn{
+    display: block;
+    margin: 40px 0 0 60px;
+    padding: 14px 0;
+    width: 140px;
+    border-radius: 5px;
+    border: 0;
+    color:white;
+    cursor: pointer;
+    background-color:blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+#books_data {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+th{
+    padding: 10px 25px;
+}
+
+td {
+    padding: 15px 35px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.blue_btns {
+    display: block;
+    padding: 14px 0;
+    width: 140px;
+    border-radius: 5px;
+    border: 0;
+    color:white;
+    cursor: pointer;
+    background-color:blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+#to_main_page {
+    margin-left: 30px;
+}
+
+#delete_btn {
+    display: block;
+    padding: 14px 0;
+    width: 140px;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    color:gray;
+    cursor: pointer;
+    background-color:white;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+#save_changes_btn {
+    display: block;
+    padding: 14px 0;
+    width: 140px;
+    border-radius: 5px;
+    border: 0;
+    color:white;
+    cursor: pointer;
+    background-color:blue;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}

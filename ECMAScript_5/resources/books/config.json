@@ -1,0 +1,85 @@
+{
+	"type": "Collection",
+	"properties": {
+		"title": {
+			"name": "title",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "title",
+			"order": 0
+		},
+		"publishingHouse": {
+			"name": "publishingHouse",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "publishingHouse",
+			"order": 1
+		},
+		"author": {
+			"name": "author",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "author",
+			"order": 2
+		},
+		"releasingYear": {
+			"name": "releasingYear",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "releasingYear",
+			"order": 3
+		},
+		"genre": {
+			"name": "genre",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "genre",
+			"order": 4
+		},
+		"price": {
+			"name": "price",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "price",
+			"order": 5
+		},
+		"discType": {
+			"name": "discType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "discType",
+			"order": 6
+		},
+		"fileFormat": {
+			"name": "fileFormat",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "fileFormat",
+			"order": 7
+		},
+		"branchOfScience": {
+			"name": "branchOfScience",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "branchOfScience",
+			"order": 8
+		},
+		"bindingType": {
+			"name": "bindingType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "bindingType",
+			"order": 9
+		}
+	}
+}

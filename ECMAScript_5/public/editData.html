@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Data</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Редактирование:</h1>
+    <form id="edit_book">
+            <div class="form_item">
+                <label for="edit_book_type">Тип записи</label>
+                <input name="edit_book_type" id="edit_book_type" value="" disabled>
+            </div>
+            <div class="form_item">
+                <label for="edit_title">Название книги</label>
+                <input type="text" name="edit_title" id="edit_title" value="" required>
+            </div>
+            <div class="form_item">          
+                <label for="edit_publishing_house">Издательство</label>
+                <input type="text" name="edit_publishing_house" id="edit_publishing_house" value="" required>
+            </div>       
+            <div class="form_item">    
+                <label for="edit_author">Автор</label>
+                <input type="text" name="edit_author" id="edit_author" value="" required>
+            </div>
+            <div class="form_item">           
+                <label for="edit_releasing_year">Год издания</label>
+                <input type="number" name="edit_releasing_year" id="edit_releasing_year" value="" required>
+            </div>
+            <div class="form_item">       
+                <label for="edit_genre">Жанр</label>
+                <select name="edit_genre" id="edit_genre" value="">       
+                    <option value="Наука">Наука</option>
+                    <option value="Трагедия">Трагедия</option>
+                    <option value="Комедия">Комедия</option>
+                    <option value="Детектив">Детектив</option>
+                    <option value="Роман">Роман</option>
+                    <option value="Фэнтези">Фэнтези</option>
+                </select>
+            </div>   
+            <div class="form_item">    
+                <label for="edit_price">Стоимость</label>
+                <input type="number" name="edit_price" id="edit_price" value="" required>
+            </div>
+            <div class="form_item">
+                <div id="hide-show_edit_audiobook">
+                    <div class="form_item">
+                        <label for='edit_disc_type'>Тип диска</label>
+                        <select name='edit_disc_type' id='edit_disc_type' value="">
+                            <option value="CD">CD</option>
+                            <option value="DVD">DVD</option>
+                        </select>
+                    </div>
+                    <div class="form_item">
+                        <label for='edit_file_format'>Формат файла</label>
+                        <select name='edit_file_format' id='edit_file_format' value="">    
+                            <option value=".flac">.flac</option>
+                            <option value=".mp3">.mp3</option>
+                            <option value=".wav">.wav</option>
+                        </select>
+                    </div> 
+                </div>
+            </div>
+            <div id="hide-show_edit_textbook" style="display: none">
+                <div class="form_item">
+                    <label for='edit_branch_of_science'>Область науки</label>
+                    <select name='edit_branch_of_science' id='edit_branch_of_science' value="">
+                        <option value="Философия">Философия</option>
+                        <option value="Физика">Физика</option>
+                        <option value="Математика">Математика</option>
+                        <option value="Электроника">Электроника</option>
+                        <option value="Экономика">Экономика</option>
+                        <option value="Лингвистика">Лингвистика</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for='edit_binding_type'>Тип переплета</label>
+                    <select name='edit_binding_type' id='edit_binding_type' value="">
+                        <option value="Твердый">Твердый</option>
+                        <option value="Мягкий">Мягкий</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" id="save_changes_btn" value="Сохранить изменения">
+    </form>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/secondTask.js"></script>
+    <script src="js/mainPage.js"></script>
+</body>
+</html>
