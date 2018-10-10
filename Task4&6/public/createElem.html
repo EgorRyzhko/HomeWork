@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add book</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Новая книга:</h1>
+    <form id="add_book">
+            <div class="form_item">
+                <label for="book_type">Тип записи</label>
+                <select name="book_type" id="book_type">
+                    <option value="Аудиокнига">Аудиокнига</option>
+                    <option value="Учебник">Учебник</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label for="title">Название книги</label>
+                <input type="text" name="title" id="title" value="" required>
+            </div>
+            <div class="form_item">          
+                <label for="publishing_house">Издательство</label>
+                <input type="text" name="publishing_house" id="publishing_house" value="" required>
+            </div>       
+            <div class="form_item">    
+                <label for="author">Автор</label>
+                <input type="text" name="author" id="author" value="" required>
+            </div>
+            <div class="form_item">           
+                <label for="releasing_year">Год издания</label>
+                <input type="number" name="releasing_year" id="releasing_year" value="" required>
+            </div>
+            <div class="form_item">       
+                <label for="genre">Жанр</label>
+                <select name="genre" id="genre" value="">       
+                    <option value="Наука">Наука</option>
+                    <option value="Трагедия">Трагедия</option>
+                    <option value="Комедия">Комедия</option>
+                    <option value="Детектив">Детектив</option>
+                    <option value="Роман">Роман</option>
+                    <option value="Фэнтези">Фэнтези</option>
+                </select>   
+            <div class="form_item">    
+                <label for="price">Стоимость, руб.</label>
+                <input type="number" name="price" id="price" value="" required>
+            </div>
+            <div class="form_item">
+                <div id="hide-show_audiobook">
+                    <div class="form_item">
+                        <label for='disc_type'>Тип диска</label>
+                        <select name='disc_type' id='disc_type' value="">
+                            <option value="CD">CD</option>
+                            <option value="DVD">DVD</option>
+                        </select>
+                    </div>
+                    <div class="form_item">
+                        <label for='file_format'>Формат файла</label>
+                        <select name='file_format' id='file_format' value="">    
+                            <option value=".flac">.flac</option>
+                            <option value=".mp3">.mp3</option>
+                            <option value=".wav">.wav</option>
+                        </select>
+                    </div> 
+                </div>
+            </div>
+            <div id="hide-show_textbook" style="display: none">
+                <div class="form_item">
+                    <label for='branch_of_science'>Область науки</label>
+                    <select name='branch_of_science' id='branch_of_science' value="">
+                        <option value="Философия">Философия</option>
+                        <option value="Физика">Физика</option>
+                        <option value="Математика">Математика</option>
+                        <option value="Электроника">Электроника</option>
+                        <option value="Экономика">Экономика</option>
+                        <option value="Лингвистика">Лингвистика</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <label for='binding_type'>Тип переплета</label>
+                    <select name='binding_type' id='binding_type' value="">
+                        <option value="Твердый">Твердый</option>
+                        <option value="Мягкий">Мягкий</option>
+                    </select>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" id="save_btn" class="blue_btns" value="Сохранить">
+                <input type="button" id="delete_btn" onclick="deleteInfo()" value="Очистить">
+                <a href="/" id="to_main_page" class="blue_btns">Главная страница</a>
+            </div>           
+    </form>
+    
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/constructor.js"></script>
+    <script type="text/javascript" src="js/creareElem.js"></script>
+</body>
+</html>
